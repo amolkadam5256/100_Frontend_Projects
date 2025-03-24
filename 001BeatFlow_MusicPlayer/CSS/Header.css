@@ -1,0 +1,101 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Header Styling */
+header {
+  background: #d32f2f; /* More subtle red */
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo Section */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menuIcon i {
+  font-size: 22px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo {
+  font-size: 25px;
+  font-family: skadina;
+}
+
+/* Search Bar */
+.searchSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 12px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px; /* Prevent it from being too wide */
+}
+
+
+
+.searchSection i {
+  font-size: 18px;
+}
+
+.searchSection input {
+  background-color: transparent;
+  flex-grow: 1; /* Makes input take available space */
+  padding: 14px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  min-width: 100px; /* Avoids shrinking too much */
+  width: 400px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .searchSection{
+    width:auto;
+    background-color: gainsboro;
+    border-radius:4px;
+
+  }
+  .searchSection input{
+    background:red;
+    display: none;
+  }
+}
+
+/* Profile Section */
+.ProfileSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ProfileSection img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
